@@ -1,25 +1,25 @@
 {
-    "name": "@dpuse/dpuse-connector-template",
-    "version": "0.0.9",
+    "name": "@dpuse/dpuse-connector-microsoft-onedrive",
+    "version": "0.0.10",
     "private": false,
-    "description": "Template scaffold for building new DPUse connectors.",
+    "description": "Provides access to Microsoft OneDrive account(s) for file upload and download.",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "type": "module",
     "sideEffects": false,
     "homepage": "https://www.dpuse.app",
     "bugs": {
-        "url": "https://github.com/dpuse/dpuse-connector-template/issues"
+        "url": "https://github.com/dpuse/dpuse-connector-microsoft-onedrive/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dpuse/dpuse-connector-template.git"
+        "url": "git+https://github.com/dpuse/dpuse-connector-microsoft-onedrive.git"
     },
-    "module": "./dist/dpuse-connector-template.es.js",
+    "module": "./dist/dpuse-connector-microsoft-onedrive.es.js",
     "types": "./dist/types/src/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/dpuse-connector-template.es.js",
+            "import": "./dist/dpuse-connector-microsoft-onedrive.es.js",
             "types": "./dist/types/src/index.d.ts"
         }
     },
