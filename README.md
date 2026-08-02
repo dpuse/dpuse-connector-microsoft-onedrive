@@ -28,22 +28,23 @@ Connectors conform to a unified interface contract by implementing a specific su
 
 This connector is a Bidirectional connector that supports both read and write actions. Connectors can also function as a Source (read-only) or Destination (write-only), depending on the actions they support. The table below lists all connector actions and highlights those supported by this connector.
 
-| Action               | Supported |
-| :------------------- | :-------: |
-| Abort Operation      |     ✓     |
-| Audit Object Content |     ✓     |
-| Create Object        |     ✓     |
-| Describe Connection  |     ✓     |
-| Drop Object          |     ✓     |
-| Find Object          |     ✓     |
-| Get Readable Stream  |     ✓     |
-| Get Record           |     ✓     |
-| List Nodes           |     ✓     |
-| Preview Object       |     ✓     |
-| Remove Records       |     ✓     |
-| Retrieve Chunks      |     ✓     |
-| Retrieve Records     |     ✓     |
-| Upsert Records       |     ✓     |
+|Action|Supported|
+|:----|:-------:|
+| Abort Operation | ✓ |
+| Audit Object Content | ✓ |
+| Create Object | ✓ |
+| Describe Connection | ✓ |
+| Drop Object | ✓ |
+| Find Object | ✓ |
+| Get Info |  |
+| Get Readable Stream | ✓ |
+| Get Record | ✓ |
+| List Nodes | ✓ |
+| Preview Object | ✓ |
+| Remove Records | ✓ |
+| Retrieve Chunks | ✓ |
+| Retrieve Records | ✓ |
+| Upsert Records | ✓ |
 
 <!-- CONNECTOR_ACTIONS_END -->
 
@@ -71,9 +72,9 @@ _Requires [Node.js](https://nodejs.org/) 23.11 or later, [npm](https://www.npmjs
 
 License data is collected automatically on each release using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists all production dependencies. These dependencies (including transitive ones) have been checked and confirmed to use BSD-3-Clause or MIT — all permissive, commercially-friendly licenses. Users of the uploaded library are covered by these checks; developers cloning this repository should independently verify development dependencies.
 
-| Dependency                                                   | Version | License(s) | Document                                                              |
-| :----------------------------------------------------------- | :-----: | :--------- | :-------------------------------------------------------------------- |
-| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared) | 0.3.737 | MIT        | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.737-LICENSE.txt) |
+|Dependency|Version|License(s)|Document|
+|:-|:-:|:-|:-|
+|[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)|0.3.760|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.760-LICENSE.txt)|
 
 <!-- DEPENDENCY_LICENSES_END -->
 
@@ -83,7 +84,7 @@ License data is collected automatically on each release using [license-checker](
 
 The dependency tree below lists every package in this project — direct and transitive — along with its installed version, release date, and update status. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are simply mature and stable, requiring no active development.
 
-- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.737 — this month: 2026-07-07
+- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.760 — this month: 2026-08-02
 
 <!-- DEPENDENCY_TREE_END -->
 
@@ -95,12 +96,14 @@ The Bundle Analysis Report is generated automatically on each release using [Son
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                            | Composition                  |
-| :--------------------------------------------------------------------------- | :--------------------------- |
-| dist/dpuse-connector-microsoft-onedrive.es.js                                | 5.6 kB · brotli 1.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                       | `██████████░░░░░░░░░░` 49.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                          | `█████████░░░░░░░░░░░` 43.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared-errors.es.js | `██░░░░░░░░░░░░░░░░░░` 7.7%  |
+|Chunk/Module/File|Composition|
+|:------ |:-----------|
+| dist/dpuse-connector-microsoft-onedrive.es.js | 12.7 kB · brotli 2.2 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `███████████████░░░░░` 75.1% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `████░░░░░░░░░░░░░░░░` 21.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared-errors.es.js | `█░░░░░░░░░░░░░░░░░░░` 3.4% |
+
+(unassigned) = bytes Sonda can't trace to a specific source line (whitespace, stray keywords, bundler-injected region markers) — not actual missing/unknown code.
 
 <!-- BUNDLE_END -->
 
