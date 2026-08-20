@@ -99,8 +99,8 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 |Chunk/Module/File|Composition|
 |:------ |:-----------|
 | dist/dpuse-connector-microsoft-onedrive.es.js | 12.7 kB · brotli 2.2 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `███████████████░░░░░` 75.1% |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `████░░░░░░░░░░░░░░░░` 21.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `███████████████░░░░░` 75.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `████░░░░░░░░░░░░░░░░` 21.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared-errors.es.js | `█░░░░░░░░░░░░░░░░░░░` 3.4% |
 
 (unassigned) = bytes Sonda can't trace to a specific source line (whitespace, stray keywords, bundler-injected region markers) — not actual missing/unknown code.
