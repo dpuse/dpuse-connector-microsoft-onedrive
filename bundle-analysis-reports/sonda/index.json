@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-09-30T15:35:55.390Z",
+    "generatedAt": "2026-10-02T10:27:54.150Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -22,7 +22,7 @@
       "type": "other",
       "format": "other",
       "uncompressed": 10826,
-      "gzip": 2186,
+      "gzip": 2189,
       "brotli": 0,
       "parent": "dist/dpuse-connector-microsoft-onedrive.es.js"
     },
@@ -38,7 +38,7 @@
       "name": "dist/dpuse-connector-microsoft-onedrive.es.js",
       "type": "script",
       "uncompressed": 21927,
-      "gzip": 5189,
+      "gzip": 5191,
       "brotli": 0
     },
     {
@@ -54,7 +54,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8296,
-      "gzip": 2524,
+      "gzip": 2523,
       "brotli": 0,
       "parent": "dist/dpuse-connector-microsoft-onedrive.es.js"
     },
