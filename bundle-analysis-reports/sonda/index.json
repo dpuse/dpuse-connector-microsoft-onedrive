@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-10-03T14:48:37.377Z",
+    "generatedAt": "2026-10-06T12:14:50.190Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -21,8 +21,8 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 10826,
-      "gzip": 2189,
+      "uncompressed": 10864,
+      "gzip": 2218,
       "brotli": 0,
       "parent": "dist/dpuse-connector-microsoft-onedrive.es.js"
     },
@@ -31,14 +31,14 @@
       "name": "config.json",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9765
+      "uncompressed": 9803
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-connector-microsoft-onedrive.es.js",
       "type": "script",
-      "uncompressed": 21927,
-      "gzip": 5191,
+      "uncompressed": 21965,
+      "gzip": 5220,
       "brotli": 0
     },
     {
@@ -46,7 +46,7 @@
       "name": "node_modules/@dpuse/dpuse-shared/dist/dpuse-shared.es.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 33907
+      "uncompressed": 35924
     },
     {
       "kind": "chunk",
@@ -54,7 +54,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8296,
-      "gzip": 2523,
+      "gzip": 2522,
       "brotli": 0,
       "parent": "dist/dpuse-connector-microsoft-onedrive.es.js"
     },
