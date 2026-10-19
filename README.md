@@ -3,7 +3,7 @@
 <!-- OPENING_START -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![DPUse version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.dpuse.app%2Fconfigs%2Fdpuse-connector-microsoft-onedrive&query=%24.data.version&prefix=v&label=DPUse&color=f6821f)](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/releases/latest)
+[![DPUse version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.dpuse.app%2Fconfigs%2Fdpuse-connector-microsoft-onedrive&query=%24.data.version&prefix=v&label=DPUse&color=blue)](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/releases/latest)
 [![CI](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/actions/workflows/ci.yml/badge.svg)](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/actions/workflows/ci.yml)
 
 Provides access to Microsoft OneDrive account(s) for file upload and download.
@@ -84,15 +84,15 @@ License data is updated each time `npm run document` is run, using [license-chec
 
 | Dependency                                                   | Version | License(s) | Document                                                              |
 | :----------------------------------------------------------- | :-----: | :--------- | :-------------------------------------------------------------------- |
-| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared) | 1.0.113 | MIT        | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@1.0.113-LICENSE.txt) |
+| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared) | 1.0.126 | MIT        | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@1.0.126-LICENSE.txt) |
 | [valibot](https://github.com/open-circle/valibot)            |  1.5.0  | MIT        | [LICENSE](licenses/downloads/valibot@1.5.0-LICENSE.txt)               |
 
 ### Dependency Tree
 
 The dependency tree below shows how each package in the table above is reached — direct and transitive — along with its installed version, release date, and update status. A package that does not ship itself, such as one whose parts are bundled separately, is left out and what ships beneath it is shown in its place. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are mature and stable (have limited or no dependencies), so they require no active development.
 
-- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 1.0.113 — this month: 2026-10-05 → latest: 1.0.116 — this month: 2026-10-06 ❗
-    - **[valibot](https://github.com/open-circle/valibot)** 1.5.0 — this month: 2026-09-09
+- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 1.0.126 — this month: 2026-10-19
+    - **[valibot](https://github.com/open-circle/valibot)** 1.5.0 — 1 mth ago: 2026-09-09
 
 <!-- DEPENDENCY_LICENSES_END -->
 
@@ -104,12 +104,12 @@ This report is updated with each release, from the bundle the release builds, us
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                     | Composition                                 |
-| :-------------------------------------------------------------------- | :------------------------------------------ |
-| **dist/dpuse-connector-microsoft-onedrive.es.js**                     | 21.5 kB · gzip 5.1 kB · 100.0% of the build |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared.es.js | `████████░░░░░░░░░░░░` 37.8% · 8.1 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                | `███░░░░░░░░░░░░░░░░░` 12.8% · 2.7 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)           | `██████████░░░░░░░░░░` 49.5% · 10.6 kB      |
+| Chunk/Module/File                                                     | Composition                                                                                   |
+| :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| **dist/dpuse-connector-microsoft-onedrive.es.js**                     | 21.5&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;5.1&nbsp;kB&nbsp;·&nbsp;100.0%&nbsp;of&nbsp;the&nbsp;build |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dpuse/dpuse-shared → dist/dpuse-shared.es.js | `████████░░░░░░░░░░░░`&nbsp;37.8%&nbsp;·&nbsp;8.1&nbsp;kB                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                | `███░░░░░░░░░░░░░░░░░`&nbsp;12.7%&nbsp;·&nbsp;2.7&nbsp;kB                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)           | `██████████░░░░░░░░░░`&nbsp;49.4%&nbsp;·&nbsp;10.6&nbsp;kB                                    |
 
 Bars show each row's share of its output file.
 
@@ -125,10 +125,11 @@ This section is updated each time `npm run document` is run. Settings come from 
 
 ### Testing
 
-| Check                | Status | What it does                                                                                                                                                                                                |
-| :------------------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Unit tests           | ✅ On  | [Vitest](https://vitest.dev) runs the unit tests. Part of the [CI workflow](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/actions/workflows/ci.yml) on every push and pull request to `main`. |
-| Property-based tests | ❌ Off | [fast-check](https://fast-check.dev) runs many random inputs per test to find edge cases, alongside the unit tests.                                                                                         |
+| Check                | Status | What it does                                                                                                                                                                                                                                                                                                                 |
+| :------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Unit tests           | ✅ On  | [Vitest](https://vitest.dev) runs the unit tests. Part of the [CI workflow](https://github.com/dpuse/dpuse-connector-microsoft-onedrive/actions/workflows/ci.yml) on every push and pull request to `main`.                                                                                                                  |
+| Property-based tests | ❌ Off | [fast-check](https://fast-check.dev) runs many random inputs per test to find edge cases, alongside the unit tests.                                                                                                                                                                                                          |
+| Test coverage        | ✅ On  | ![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdpuse%2Fdpuse-connector-microsoft-onedrive%2Fmain%2Fcode-health-reports%2Fvitest%2Fbadge.json) [Vitest's V8 coverage](https://vitest.dev/guide/coverage) measures the share of source lines the unit tests run. The target is 80%. |
 
 ### Code Quality
 
