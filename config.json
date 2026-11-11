@@ -6,22 +6,7 @@
     "description": {
         "en": "Provides access to Microsoft OneDrive account(s) for file upload and download. Microsoft OneDrive is a cloud-based file storage solution designed to store, share, and synchronise files across multiple devices."
     },
-    "actionNames": [
-        "abortOperation",
-        "auditObjectContent",
-        "createObject",
-        "describeConnection",
-        "dropObject",
-        "findObject",
-        "getReadableStream",
-        "getRecord",
-        "listNodes",
-        "previewObject",
-        "removeRecords",
-        "retrieveChunks",
-        "retrieveRecords",
-        "upsertRecords"
-    ],
+    "actionNames": [],
     "category": null,
     "categoryId": "fileStore",
     "firstCreatedAt": null,
@@ -39,9 +24,9 @@
     "statusId": "alpha",
     "typeId": "connector",
     "usage": null,
-    "usageId": "bidirectional",
+    "usageId": "unknown",
     "vendorAccountURL": null,
     "vendorDocumentationURL": null,
     "vendorHomeURL": null,
-    "version": "1.0.116"
+    "version": "1.0.117"
 }
