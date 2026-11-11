@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-connector-microsoft-onedrive",
-    "version": "1.0.115",
+    "version": "1.0.116",
     "private": false,
     "description": "Provides access to Microsoft OneDrive account(s) for file upload and download.",
     "license": "MIT",
