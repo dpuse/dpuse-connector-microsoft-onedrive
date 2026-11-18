@@ -36,27 +36,28 @@ Connectors conform to a unified interface contract by implementing a specific su
 
 This connector does not yet implement any read or write actions, so its type cannot be determined. Connectors function as a Source (read-only), a Destination (write-only), or Bidirectional (read/write), depending on the actions they support. The table below lists all connector actions and highlights those supported by this connector.
 
-| Action               | Supported |
-| :------------------- | :-------: |
-| Abort Operation      |           |
-| Audit Object Content |           |
-| Close Store          |           |
-| Create Object        |           |
-| Describe Connection  |           |
-| Drop Object          |           |
-| Find Object          |           |
-| Get Info             |           |
-| Get Readable Stream  |           |
-| Get Record           |           |
-| List Nodes           |           |
-| Load Object Records  |           |
-| Open Store           |           |
-| Preview Object       |           |
-| Query Records        |           |
-| Remove Records       |           |
-| Retrieve Chunks      |           |
-| Retrieve Records     |           |
-| Upsert Records       |           |
+| Action                        | Supported |
+| :---------------------------- | :-------: |
+| Audit Object Content          |           |
+| Close Store                   |           |
+| Create Object                 |           |
+| Describe Connection           |           |
+| Drop Object                   |           |
+| Find Object                   |           |
+| Get Info                      |           |
+| Get Object                    |           |
+| Get Readable Stream           |           |
+| Get Record                    |           |
+| Index Object Structure        |           |
+| List Nodes                    |           |
+| List Object Structure Entries |           |
+| Load Object Records           |           |
+| Open Store                    |           |
+| Preview Object                |           |
+| Query Records                 |           |
+| Remove Records                |           |
+| Retrieve Records              |           |
+| Upsert Records                |           |
 
 <!-- SUPPORTED_ACTIONS_END -->
 
@@ -84,7 +85,7 @@ This repository is managed using the common set of actions provided by [@dpuse/d
 
 ## Dependency Licenses
 
-License data is updated each time `npm run document` is run, using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists every package whose code, styles or assets are included in this project's build, as recorded by the build itself. Modules loaded at run time are not included; each documents its own. These dependencies have been checked and confirmed to use MIT, all of which allow commercial use. All are used unmodified, so any licence conditions that apply only to modified versions are not triggered. Developers cloning this repository should independently verify development dependencies.
+License data is updated each time `npm run document` is run, using [CycloneDX](https://github.com/CycloneDX/cyclonedx-node-npm). The following table lists every package whose code, styles or assets are included in this project's build, as recorded by the build itself. Modules loaded at run time are not included; each documents its own. These dependencies have been checked and confirmed to use MIT, all of which allow commercial use. All are used as published. Where the build has to adjust a dependency so it can be bundled, the adjustment only affects how its files are located and loaded, never what the code does. Developers cloning this repository should independently verify development dependencies.
 
 | Dependency | Version | License(s) | Document |
 | :--------- | :-----: | :--------- | :------- |
